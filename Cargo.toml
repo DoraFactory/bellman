@@ -22,8 +22,9 @@ byteorder = "1"
 num_cpus = "1"
 serde = {version = "1", features = ["derive", "rc"]}
 
-pairing = {package = "pairing_ce", version = "0.28.*" }
+# pairing = {package = "pairing_ce", version = "0.28.*" }
 # pairing = {package = "pairing_ce", path = "../pairing"}
+pairing = { package = "pairing_ce", git = "https://github.com/matter-labs/pairing.git" }
 
 futures = {package = "futures", version = "0.3", default_features = false, features = ["executor"]}
 crossbeam = {version = "0.7", optional = true}
